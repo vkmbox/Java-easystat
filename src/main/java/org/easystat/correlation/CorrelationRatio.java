@@ -1,6 +1,6 @@
 package org.easystat.correlation;
 
-import java.util.*;
+//import java.util.*;
 import org.easystat.util.QuickSort;
 
 import org.apache.commons.math4.stat.StatUtils;
