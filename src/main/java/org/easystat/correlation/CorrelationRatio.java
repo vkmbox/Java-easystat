@@ -50,6 +50,7 @@ public class CorrelationRatio {
     int currLen = 0, currPos = 0;
     double yMean = StatUtils.mean(yArray);
     double regSum = 0d, varSum = 0d;
+    //System.out.println("Mean:"+yMean);
     
     for ( int ii = 0; ii < length; ii++ )
     {
@@ -57,15 +58,17 @@ public class CorrelationRatio {
       if ( currX == xArray[ii] ) {
         currLen += 1;
       } else {
-        //System.out.println(currPos + ";" + currLen + ";" + StatUtils.mean(yArray, currPos, currLen));
+        //System.out.println(currPos + ";" + currLen + ";" + currX + ";" + StatUtils.mean(yArray, currPos, currLen));
+        //System.out.println(currLen+";"+( yMean - StatUtils.mean(yArray, currPos, currLen) ));
         regSum += currLen*Math.pow(( yMean - StatUtils.mean(yArray, currPos, currLen) ),2);
         currX = xArray[ii]; currLen = 1; currPos = ii;
       }
     }
-    //System.out.println(currPos + ";" + currLen + ";" + StatUtils.mean(yArray, currPos, currLen));
+    //System.out.println(currPos + ";" + currLen + ";" + currX + ";" + StatUtils.mean(yArray, currPos, currLen));
+    //System.out.println(currLen+";"+( yMean - StatUtils.mean(yArray, currPos, currLen) ));
     regSum += currLen*Math.pow(( yMean - StatUtils.mean(yArray, currPos, currLen) ),2);
     
-    //System.out.print(regSum+";"+varSum+";"+regSum/varSum);
+    //System.out.print(regSum/length+";"+varSum/length+";"+regSum/varSum);
     return varSum == 0 ? Double.NaN : Math.pow(regSum/varSum, 0.5);
   }
   
