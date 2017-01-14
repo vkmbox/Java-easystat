@@ -2,7 +2,7 @@ package org.easystat.util;
 
 import java.util.Random;
 
-public class QuickSort {
+public class QuickSortDouble {
   
   public static final Random RND = new Random();
   

@@ -23,4 +23,15 @@ public final class CorrelationRatioTest {
         );
     Assert.assertEquals("correlation ratio", CORRRATIO, result, TOLERANCE);
   }
+  
+  @Test
+  public void testCorrelationRatioArray()
+  {
+    double result = 
+      new CorrelationRatio().correlationRatio
+        ( new double[][]{{3, 0}, {2, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {2, 0}, {2, 0}, {2, 0}, {3, 0}, {3, 0}, {3, 0}, {3, 0}, {3, 0} }
+        , new double[]{85, 40, 45, 70, 29, 15, 21, 20, 30, 42, 65, 95, 80, 70, 73 }
+        );
+    Assert.assertEquals("correlation ratio", CORRRATIO, result, TOLERANCE);
+  }
 }
