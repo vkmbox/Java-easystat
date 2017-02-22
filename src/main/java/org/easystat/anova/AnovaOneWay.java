@@ -42,8 +42,6 @@ public class AnovaOneWay {
      *
      * @param categoryData <code>Array</code> of <code>double[]</code>
      * arrays each containing data for one category
-     * @param allowOneElementData if true, allow computation for one catagory
-     * only or for one data element per category
      * @return computed AnovaOneResult
      * @throws MathIllegalArgumentException if the number of categories is less than 2 
      * or a contained array for category does not contain at least two values
