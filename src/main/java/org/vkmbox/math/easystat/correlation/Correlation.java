@@ -1,4 +1,4 @@
-package org.easystat.correlation;
+package org.vkmbox.math.easystat.correlation;
 
 import org.apache.commons.math4.stat.StatUtils;
 import org.apache.commons.math4.exception.util.LocalizedFormats;

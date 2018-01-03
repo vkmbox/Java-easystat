@@ -1,4 +1,4 @@
-package org.easystat.util;
+package org.vkmbox.math.util;
 
 import java.util.Random;
 

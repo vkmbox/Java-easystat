@@ -1,8 +1,8 @@
-package org.easystat.correlation;
+package org.vkmbox.math.easystat.correlation;
 
 //import java.util.*;
-import org.easystat.util.QuickSortDouble;
-import org.easystat.util.QuickSortDoubleArray;
+import org.vkmbox.math.util.QuickSortDouble;
+import org.vkmbox.math.util.QuickSortDoubleArray;
 
 import org.apache.commons.math4.stat.StatUtils;
 import org.apache.commons.math4.exception.util.LocalizedFormats;

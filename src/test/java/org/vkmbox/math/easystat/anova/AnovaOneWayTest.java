@@ -1,5 +1,6 @@
-package org.easystat.anova;
+package org.vkmbox.math.easystat.anova;
 
+//import org.vkmbox.math.easystat.anova.AnovaOneWay;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
-package org.easystat.correlation;
+package org.vkmbox.math.easystat.correlation;
 
+//import org.vkmbox.math.easystat.correlation.CorrelationRatio;
 import org.junit.Assert;
 import org.junit.Test;
 

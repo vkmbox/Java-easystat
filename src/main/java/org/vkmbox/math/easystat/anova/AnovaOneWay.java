@@ -1,4 +1,4 @@
-package org.easystat.anova;
+package org.vkmbox.math.easystat.anova;
 
 import org.apache.commons.math4.stat.StatUtils;
 import org.apache.commons.math4.exception.util.LocalizedFormats;
